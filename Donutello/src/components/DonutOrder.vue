@@ -107,7 +107,9 @@ import { ref } from 'vue'
 .inputPadding {
     padding: 0.5rem;
 }
-
+.textereaPadding {
+    padding: 4rem 0.5rem;
+}
 </style>
 
 
