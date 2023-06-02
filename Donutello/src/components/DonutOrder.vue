@@ -80,6 +80,15 @@ import { ref } from 'vue'
     border-radius: 1rem;
     margin: 2rem 0 0 0;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
 </style>
 
 
