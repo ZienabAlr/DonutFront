@@ -104,6 +104,10 @@ import { ref } from 'vue'
     outline: none;
 }
 
+.inputPadding {
+    padding: 0.5rem;
+}
+
 </style>
 
 
