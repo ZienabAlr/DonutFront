@@ -27,10 +27,40 @@ import { ref } from 'vue'
             <input class="inputs inputPadding" type="text" id="phone" name="name" placeholder="Telefoonnummer" v-model="phone">
         </div>
 
-        <div class="infoLable">
-            <!-- <label for="name">Donut naam</label> -->
-            <input class="inputs inputPadding" type="text" id="donut" name="name" placeholder="Donut naam" v-model="company">
+    </div>
+
+    <div class="form">
+        <h2>Donut Bestelling</h2>
+
+        <div class="infoLabel">
+            <!-- <label for="donut">Donut Naam</label> -->
+            <input class ="inputs inputPadding" type="text" id="donut" v-model="dountname">
+
         </div>
+        
+        <div class="infoLabel">
+            <label for="glaze">Glazuur</label>
+            <select class ="inputs inputPadding" id="glaze" v-model="glaze">
+                
+                <option disabled value="">Kies een glazuur</option>
+                <option>Chocolade</option>
+                <option>Melkchocolade</option>
+                <option>Witte Chocolade</option>
+                <option>Aardbei</option>
+
+            </select>
+        </div>
+
+        <div class="infoLabel">
+            <!-- <label for="amount">Aantal</label> -->
+            <input class ="inputs inputPadding" type="text" id="donut" v-model="amount">
+        </div>
+        
+        <div class="infoLabel">
+            <label for="note">Wil je nog iet zeggen?</label>
+            <textarea class ="inputs textereaPadding" id="note" v-model="note"></textarea>
+        </div>
+
 
     </div>
 
