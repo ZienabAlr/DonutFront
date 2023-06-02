@@ -1,5 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import DonutOrder from './components/DonutOrder.vue'
+
 </script>
 
 <template>
