@@ -89,6 +89,15 @@ import { ref } from 'vue'
     
 }
 
+.infoLabel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
 </style>
 
 
