@@ -97,6 +97,12 @@ import { ref } from 'vue'
     margin: 1rem 0;
 }
 
+.inputs {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
 
 </style>
 
