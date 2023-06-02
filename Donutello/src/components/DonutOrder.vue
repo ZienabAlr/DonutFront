@@ -7,6 +7,7 @@ import { ref } from 'vue'
 
 <template>
 <div class="orderForm">
+    
     <h1>Bestelling formulier</h1>
 
     <div class="form">
@@ -55,21 +56,30 @@ import { ref } from 'vue'
             <!-- <label for="amount">Aantal</label> -->
             <input class ="inputs inputPadding" type="text" id="donut" v-model="amount">
         </div>
-        
+
         <div class="infoLabel">
             <label for="note">Wil je nog iet zeggen?</label>
             <textarea class ="inputs textereaPadding" id="note" v-model="note"></textarea>
         </div>
-
-
     </div>
 
 </div>
-
 </template>
 
 <style scoped>
 
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 30%; */
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem 0 0 0;
+}
 </style>
 
 
