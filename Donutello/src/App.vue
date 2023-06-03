@@ -8,6 +8,7 @@ import DonutOrder from './components/DonutOrder.vue'
   <div class="app">
 
     <DonutOrder />
+    
   </div>
 </template>
 
