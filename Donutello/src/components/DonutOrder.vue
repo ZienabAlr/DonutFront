@@ -1,6 +1,13 @@
 <script setup>
-import { ref } from 'vue' 
+import { ref, onMounted, reactive } from 'vue' 
 
+let company = ref('')
+let email = ref('')
+let phone = ref('')
+let donutname = ref('')
+let glaze = ref('')
+let amount = ref('')
+let note = ref('')
 
 
 </script>
@@ -56,7 +63,7 @@ import { ref } from 'vue'
         </div>
 
         <div class="infoLable">
-            <label class="placeholder">Placeholder</label> 
+            <label class="placeholder">Amount</label> 
             <input class ="inputs inputPadding" type="text" id="donut"  v-model="amount">
         </div>
 
