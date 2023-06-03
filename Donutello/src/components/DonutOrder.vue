@@ -63,6 +63,7 @@ import { ref } from 'vue'
         </div>
     </div>
 
+    <button class ="btn" @click.prevent="postOrder">Bestelling sturen</button>
 </div>
 </template>
 
@@ -71,9 +72,9 @@ import { ref } from 'vue'
 .orderForm{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    /* width: 30%; */
+    width: 30%;
     height: 100%;
     background-color: #f5f5f5;
     padding: 2rem;
@@ -110,6 +111,7 @@ import { ref } from 'vue'
 .textereaPadding {
     padding: 4rem 0.5rem;
 }
+
 </style>
 
 
