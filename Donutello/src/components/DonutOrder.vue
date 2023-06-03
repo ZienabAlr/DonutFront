@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, reactive } from 'vue' 
+import { ref} from 'vue' 
 
 let company = ref('')
 let email = ref('')
