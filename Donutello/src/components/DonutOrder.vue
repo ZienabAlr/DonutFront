@@ -14,18 +14,20 @@ import { ref } from 'vue'
         <h2>Contact gegevens</h2>
        
         <div class="infoLable">
-            <!-- <label for="name">Bedrijfsnaam</label> -->
-            <input class="inputs inputPadding" type="text" id="name" name="name" placeholder="Bedrijfsnaam" v-model="company">
+            <label class="placeholder" for="name">Bedrijfsnaam</label>
+            <input class="inputs inputPadding" type="text" id="name" name="name" v-model="company">
         </div>
 
         <div class="infoLable">
-            <!-- <label for="name">E-mail</label> -->
-            <input class="inputs inputPadding" type="text" id="email"  placeholder="E-mail" v-model="company">
+            <label class="placeholder" for="name">E-mail</label>
+            <input class="inputs inputPadding" type="text" id="email"   v-model="company">
+
         </div>
 
         <div class="infoLable">
-            <!-- <label for="name">Telefoonnummer</label> -->
-            <input class="inputs inputPadding" type="text" id="phone" name="name" placeholder="Telefoonnummer" v-model="phone">
+            <label class="placeholder" for="name">Telefoonnummer</label>
+            <input class="inputs inputPadding" type="text" id="phone" name="name" v-model="phone">
+
         </div>
 
     </div>
@@ -34,13 +36,13 @@ import { ref } from 'vue'
         <h2>Donut Bestelling</h2>
 
         <div class="infoLable">
-            <!-- <label for="donut">Donut Naam</label> -->
-            <input class ="inputs inputPadding" type="text" id="donut" v-model="dountname">
+            <label class="placeholder" for="donut">Donut Naam</label>
+            <input class ="inputs inputPadding" type="text" id="donut"  v-model="dountname">
 
         </div>
         
         <div class="infoLable">
-            <label for="glaze">Glazuur</label>
+            <label  class="placeholder" for="glaze">Glazuur</label>
             <select class ="inputs inputPadding" id="glaze" v-model="glaze">
                 
                 <option disabled value="">Kies een glazuur</option>
@@ -50,15 +52,16 @@ import { ref } from 'vue'
                 <option>Aardbei</option>
 
             </select>
+
         </div>
 
         <div class="infoLable">
-            <!-- <label for="amount">Aantal</label> -->
-            <input class ="inputs inputPadding" type="text" id="donut" v-model="amount">
+            <label class="placeholder">Placeholder</label> 
+            <input class ="inputs inputPadding" type="text" id="donut"  v-model="amount">
         </div>
 
         <div class="infoLable">
-            <label for="note">Wil je nog iet zeggen?</label>
+            <label class="placeholder" for="note">Wil je nog iet zeggen?</label>
             <textarea class ="inputs textereaPadding" id="note" v-model="note"></textarea>
         </div>
     </div>
@@ -72,9 +75,8 @@ import { ref } from 'vue'
 .orderForm{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
     height: 100%;
     background-color: #f5f5f5;
     padding: 2rem;
@@ -106,7 +108,7 @@ import { ref } from 'vue'
 }
 
 .inputPadding {
-    padding: 0.5rem;
+    padding: 0.9rem 0.5rem;
 }
 .textereaPadding {
     padding: 4rem 0.5rem;
