@@ -1,6 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 import DonutOrder from './components/DonutOrder.vue'
+import DonutConfig from './components/DonutConfig.vue';
 
 </script>
 
@@ -8,7 +9,8 @@ import DonutOrder from './components/DonutOrder.vue'
   <div class="app">
 
     <DonutOrder />
-    
+    <DonutConfig />
+
   </div>
 </template>
 
