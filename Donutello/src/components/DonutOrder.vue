@@ -64,7 +64,7 @@ const postOrder = () => {
 
         <div class="infoLable">
             <label class="placeholder" for="name">E-mail</label>
-            <input class="inputs inputPadding" type="text" id="email"   v-model="company">
+            <input class="inputs inputPadding" type="text" id="email"   v-model="email">
 
         </div>
 
@@ -81,7 +81,7 @@ const postOrder = () => {
 
         <div class="infoLable">
             <label class="placeholder" for="donut">Donut Naam</label>
-            <input class ="inputs inputPadding" type="text" id="donut"  v-model="dountname">
+            <input class ="inputs inputPadding" type="text" id="donut"  v-model="donutname">
 
         </div>
         
@@ -106,7 +106,7 @@ const postOrder = () => {
 
         <div class="infoLable">
             <label class="placeholder" for="note">Wil je nog iet zeggen?</label>
-            <textarea class ="inputs textereaPadding" id="note" v-model="note"></textarea>
+            <textarea class ="inputs textereaPadding" id="note" v-model="notes"></textarea>
         </div>
     </div>
 
