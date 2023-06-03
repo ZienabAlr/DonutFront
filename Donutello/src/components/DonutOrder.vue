@@ -112,6 +112,19 @@ import { ref } from 'vue'
     padding: 4rem 0.5rem;
 }
 
+.btn {
+    color: rgb(247,226,0);
+    font-weight: 600;
+    font-family:  'Nunito', sans-serif;
+    font-size: large;
+    background-color: #E72770;
+    border: 0;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
 </style>
 
 
