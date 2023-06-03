@@ -126,6 +126,20 @@ import { ref } from 'vue'
     margin: 1rem 0;
     cursor: pointer;
 }
+input:focus {
+    outline: none;
+    border: 1px solid #E72770;
+}
+
+/* @media screen and (max-width: 768px) {
+    .orderForm {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+} */
+
 
 </style>
 
