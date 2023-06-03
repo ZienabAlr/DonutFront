@@ -7,8 +7,45 @@ let phone = ref('')
 let donutname = ref('')
 let glaze = ref('')
 let amount = ref('')
-let note = ref('')
+let notes = ref('')
 
+const postOrder = () => {
+    const order = {
+        company: company.value,
+        email: email.value,
+        phone: phone.value,
+        donutname: donutname.value,
+        glaze: glaze.value,
+        amount: amount.value,
+        notes: notes.value
+    }
+    console.log(order)
+     const api_url = 'http://localhost:3000/api/v1/donutello'
+    fetch(api_url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(order)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+
+        company.value = ""; // make the input empty after sending the order
+        email.value = ""; 
+        phone.value = ""; 
+        donutname.value = ""; 
+        glaze.value = ""; 
+        amount.value = ""; 
+        notes.value = ""
+
+
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
 
 </script>
 
