@@ -28,6 +28,19 @@ scene.add(directionalLight);
 const directionalLightHelper = new THREE.DirectionalLightHelper(
 directionalLight, 2);
 
+
+//load GTLF model
+
+let donut;
+const gltfLoader = new GLTFLoader();// liever van boven defineren en dan pas aanroepen
+      
+gltfLoader.load('models/donut1.glb', (gltf) => {
+    donut= gltf.scene;
+    console.log(gltf);
+    scene.add(gltf.scene);
+
+});
+
 camera.position.z = 1; //move camera back so we can see the cube
 
 function animate() {
