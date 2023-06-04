@@ -1,8 +1,8 @@
 <script>
 
 import * as THREE from 'three';
-
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'; //import OrbitControls to control the camera with the mouse
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; //import GLTFLoader to load the gltf model
 		
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
