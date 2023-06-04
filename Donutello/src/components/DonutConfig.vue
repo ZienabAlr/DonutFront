@@ -9,4 +9,19 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+
+//add ambient light
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+scene.add(ambientLight);
+
+//add directional light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.position.x = 1;
+directionalLight.position.z = 1;
+scene.add(directionalLight);
+
+//add directionalLight helper
+const directionalLightHelper = new THREE.DirectionalLightHelper(
+directionalLight, 2);
+
 </script>
