@@ -24,4 +24,14 @@ scene.add(directionalLight);
 const directionalLightHelper = new THREE.DirectionalLightHelper(
 directionalLight, 2);
 
+camera.position.z = 1; //move camera back so we can see the cube
+
+function animate() {
+	
+    requestAnimationFrame( animate );        
+	renderer.render( scene, camera );
+
+};
+animate();
+
 </script>
