@@ -11,6 +11,8 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+//OrbitControls to control the camera with the mouse
+const controls = new OrbitControls(camera, renderer.domElement);
 
 //add ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
