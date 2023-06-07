@@ -40,5 +40,10 @@ camera.position.z = 1;
 function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
+
+  //rotate the donut
+  if(donut){
+    donut.rotation.y += 0.01;
+  }
 }
 animate();
