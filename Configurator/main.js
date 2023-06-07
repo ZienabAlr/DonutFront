@@ -9,6 +9,12 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
+//controls.update() must be called after any manual changes to the camera's transform
+//camera.position.set(0, 20, 100);
+//make the background transparent
+renderer.setClearColor(0x000000, 0);
+
+
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const cube = new THREE.Mesh(geometry, material);
