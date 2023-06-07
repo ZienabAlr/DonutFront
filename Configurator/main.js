@@ -14,9 +14,13 @@ const controls = new OrbitControls(camera, renderer.domElement);
 //make the background transparent
 renderer.setClearColor(0x000000, 0);
 
+//add light
+const light = new THREE.AmbientLight(0xffffff, 1);
+scene.add(light);
+
 //add gltf model
 let donut;
-const gltfLoader = new GLTFLoader();// liever van boven defineren en dan pas aanroepen
+const gltfLoader = new GLTFLoader();
       
 gltfLoader.load('models/donut1.glb', (gltf) => {
     donut= gltf.scene;
