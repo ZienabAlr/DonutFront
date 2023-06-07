@@ -35,7 +35,7 @@ gltfLoader.load('models/donut1.glb', (gltf) => {
 });
 
 
-camera.position.z = 5;
+camera.position.z = 1;
 
 function animate() {
 	requestAnimationFrame( animate );
