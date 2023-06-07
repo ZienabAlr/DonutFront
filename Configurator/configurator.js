@@ -49,3 +49,22 @@ function animate() {
   }
 }
 animate();
+
+// change the glaze color of the donut
+const glaze = document.querySelector('.glaze').value;
+
+if(donut && glaze==='Chocolade'){
+    //change the color of the donut to chocolade
+    donut.children[0].material.color.set(0x7b3e00);
+}else if(donut && glaze==='Aardbei'){
+    //change the color of the donut to aardbei
+    donut.children[0].material.color.set(0xff0000);
+}else if(donut && glaze==='Melkchocolade'){
+    //change the color of the donut to melkchocolade
+    donut.children[0].material.color.set(0x8b4513);
+}else if(donut && glaze==='Witte Chocolade'){
+    //change the color of the donut to witte chocolade
+    donut.children[0].material.color.set(0xf5deb3);
+}
+
+console.log(glaze);
