@@ -42,7 +42,21 @@ export default class Order{
 
         })
     }
-   
+     
+    //select the btn and add event listener
+    setupForm(){
+        const btn = document.querySelector(".btn");
+        btn.addEventListener('click', function(e){
+            console.log('clicked');
+
+            e.preventDefault();
+        
+            this.postOrder();
+        }.bind(this));
+
+    
+
+    }
   
 
    
