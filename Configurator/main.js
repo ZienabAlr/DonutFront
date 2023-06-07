@@ -18,6 +18,11 @@ renderer.setClearColor(0x000000, 0);
 const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light);
 
+//add directional light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+directionalLight.position.set(0, 1, 0);
+scene.add(directionalLight);
+
 //add gltf model
 let donut;
 const gltfLoader = new GLTFLoader();
