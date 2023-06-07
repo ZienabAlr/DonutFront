@@ -19,8 +19,9 @@ const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light);
 
 //add directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(0, 1, 0);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.position.x = 1;
+directionalLight.position.z = 1;
 scene.add(directionalLight);
 
 //add gltf model
