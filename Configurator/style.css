@@ -49,3 +49,8 @@
   margin: 1rem 0;
   cursor: pointer;
 }
+
+input:focus {
+  outline: none;
+  border: 1px solid #E72770;
+}
