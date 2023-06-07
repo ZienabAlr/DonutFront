@@ -51,20 +51,46 @@ function animate() {
 animate();
 
 // change the glaze color of the donut
-const glaze = document.querySelector('.glaze').value;
+// const glaze = document.querySelector('.glaze').value;
 
-if(donut && glaze==='Chocolade'){
-    //change the color of the donut to chocolade
-    donut.children[0].material.color.set(0x7b3e00);
-}else if(donut && glaze==='Aardbei'){
-    //change the color of the donut to aardbei
-    donut.children[0].material.color.set(0xff0000);
-}else if(donut && glaze==='Melkchocolade'){
-    //change the color of the donut to melkchocolade
-    donut.children[0].material.color.set(0x8b4513);
-}else if(donut && glaze==='Witte Chocolade'){
-    //change the color of the donut to witte chocolade
-    donut.children[0].material.color.set(0xf5deb3);
-}
+// if(donut && glaze==='Chocolade'){
+//     //change the color of the donut to chocolade
+//     donut.children[0].material.color.set(0x7b3e00);
+// }else if(donut && glaze==='Aardbei'){
+//     //change the color of the donut to aardbei
+//     donut.children[0].material.color.set(0xff0000);
+// }else if(donut && glaze==='Melkchocolade'){
+//     //change the color of the donut to melkchocolade
+//     donut.children[0].material.color.set(0x8b4513);
+// }else if(donut && glaze==='Witte Chocolade'){
+//     //change the color of the donut to witte chocolade
+//     donut.children[0].material.color.set(0xf5deb3);
+// }
+
+// give the selected glaze a value
+//
+// select th echosen option
+const glaze = document.querySelector('.glaze');
+
+glaze.addEventListener('change', function(){
+    console.log(glaze.value);
+    if(donut && glaze.value==='Chocolade'){
+        //change the color of the donut to chocolade
+        donut.children[1].material.color.set(0x7b3e00);
+    }else if(donut && glaze.value==='Aardbei'){
+        //change the color of the donut to aardbei
+        donut.children[1].material.color.set(0xff0000);
+    }else if(donut && glaze.value==='Melkchocolade'){
+        //change the color of the donut to melkchocolade
+        donut.children[1].material.color.set(0x8b4513);
+    }else if(donut && glaze.value==='Witte Chocolade'){
+        //change the color of the donut to witte chocolade
+        donut.children[1].material.color.set(0xf5deb3);
+    }
+});
+
+
+
+
 
 console.log(glaze);
