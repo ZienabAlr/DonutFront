@@ -29,3 +29,7 @@
   border: 1px solid #ccc;
   outline: none;
 }
+
+.inputPadding {
+  padding: 0.9rem 0.5rem;
+}
