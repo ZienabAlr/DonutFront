@@ -12,6 +12,63 @@
     <div class="orderForm">
 
       <h1>Bestelling formulier</h1>
+      <div class="form">
+        <h2>Contact gegevens</h2>
+       
+        <div class="infoLable">
+            <label class="placeholder" for="name">Bedrijfsnaam</label>
+            <input class="inputs inputPadding" type="text" id="name" name="name" v-model="company">
+        </div>
+
+        <div class="infoLable">
+            <label class="placeholder" for="name">E-mail</label>
+            <input class="inputs inputPadding" type="text" id="email"   v-model="email">
+
+        </div>
+
+        <div class="infoLable">
+            <label class="placeholder" for="name">Telefoonnummer</label>
+            <input class="inputs inputPadding" type="text" id="phone" name="name" v-model="phone">
+
+        </div>
+
+    </div>
+
+    <div class="form">
+        <h2>Donut Bestelling</h2>
+
+        <div class="infoLable">
+            <label class="placeholder" for="donut">Donut Naam</label>
+            <input class ="inputs inputPadding" type="text" id="donut"  v-model="donutname">
+
+        </div>
+        
+        <div class="infoLable">
+            <label  class="placeholder" for="glaze">Glazuur</label>
+            <select class ="inputs inputPadding" id="glaze" v-model="glaze">
+                
+                <option disabled value="">Kies een glazuur</option>
+                <option>Chocolade</option>
+                <option>Melkchocolade</option>
+                <option>Witte Chocolade</option>
+                <option>Aardbei</option>
+
+            </select>
+
+        </div>
+
+        <div class="infoLable">
+            <label class="placeholder">Amount</label> 
+            <input class ="inputs inputPadding" type="text" id="donut"  v-model="amount">
+        </div>
+
+        <div class="infoLable">
+            <label class="placeholder" for="note">Wil je nog iet zeggen?</label>
+            <textarea class ="inputs textereaPadding" id="note" v-model="notes"></textarea>
+        </div>
+    </div>
+
+    <button class ="btn">Bestelling sturen</button>
 
 
     </div>
