@@ -14,18 +14,17 @@ const controls = new OrbitControls(camera, renderer.domElement);
 //make the background transparent
 renderer.setClearColor(0x000000, 0);
 
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
 //add gltf model
 let donut;
-const loader = new GLTFLoader();
-loader.load('models/donut1.glb', function (gltf) {
-  scene.add(gltf.scene);
-  donut = gltf.scene;
+const gltfLoader = new GLTFLoader();// liever van boven defineren en dan pas aanroepen
+      
+gltfLoader.load('models/donut1.glb', (gltf) => {
+    donut= gltf.scene;
+    console.log(gltf);
+    scene.add(gltf.scene);
+
 });
+
 
 camera.position.z = 5;
 
