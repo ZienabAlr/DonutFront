@@ -25,18 +25,18 @@
        
         <div class="infoLable">
             <label class="placeholder" for="name">Bedrijfsnaam</label>
-            <input class="inputs inputPadding" type="text" id="name" name="name" v-model="company">
+            <input class="inputs inputPadding company" type="text" id="name" name="name" v-model="company">
         </div>
 
         <div class="infoLable">
             <label class="placeholder" for="name">E-mail</label>
-            <input class="inputs inputPadding" type="text" id="email"   v-model="email">
+            <input class="inputs inputPadding email" type="text" id="email"   v-model="email">
 
         </div>
 
         <div class="infoLable">
             <label class="placeholder" for="name">Telefoonnummer</label>
-            <input class="inputs inputPadding" type="text" id="phone" name="name" v-model="phone">
+            <input class="inputs inputPadding phone" type="text" id="phone" name="name" v-model="phone">
 
         </div>
 
@@ -47,13 +47,13 @@
 
         <div class="infoLable">
             <label class="placeholder" for="donut">Donut Naam</label>
-            <input class ="inputs inputPadding" type="text" id="donut"  v-model="donutname">
+            <input class ="inputs inputPadding donutname" type="text" id="donut"  v-model="donutname">
 
         </div>
         
         <div class="infoLable">
             <label  class="placeholder" for="glaze">Glazuur</label>
-            <select class ="inputs inputPadding" id="glaze" v-model="glaze">
+            <select class ="inputs inputPadding glaze" id="glaze" v-model="glaze">
                 
                 <option disabled value="">Kies een glazuur</option>
                 <option>Chocolade</option>
@@ -67,18 +67,18 @@
 
         <div class="infoLable">
             <label class="placeholder">Amount</label> 
-            <input class ="inputs inputPadding" type="text" id="donut"  v-model="amount">
+            <input class ="inputs inputPadding amount" type="text" id="donut"  v-model="amount">
         </div>
 
         <div class="infoLable">
             <label class="placeholder" for="note">Wil je nog iet zeggen?</label>
-            <textarea class ="inputs textereaPadding" id="note" v-model="notes"></textarea>
+            <textarea class ="inputs textereaPadding note" id="note" v-model="notes"></textarea>
         </div>
       </div>
       <button class ="btn">Bestelling sturen</button>
     </div>
 
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/script.js"></script>
+    <script type="module" src="/configurator.js"></script>
   </body>
 </html>
